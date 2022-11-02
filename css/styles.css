@@ -302,6 +302,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
+
 /* --FOOTER-- */
 .footer {
   background-color: rgba(47, 48, 58, 1);
@@ -425,4 +426,30 @@ img {
 .projects .text {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.icon-background {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon {
+  width: 65.32px;
+  height: 70px;
+}
+
+.feature-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.svg-clock::before {
+  background-image: url(../images/clock.svg);
 }
