@@ -161,16 +161,13 @@ img {
 
 /* --HERO-- */
 .overlay-hero {
+  max-width: 1600px;
+  margin: auto;
+  background-color: rgba(47, 48, 58, 1);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-image.jpg);
-  background-color: rgba(47, 48, 58, 1);
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .hero {
