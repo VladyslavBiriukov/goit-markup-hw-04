@@ -299,6 +299,17 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
+/* --PERMANENT CLIENTS-- */
+.permanent-clients-list {
+  display: flex;
+  --items: 6;
+}
+.permanent-clients-list .card-set-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 
 /* --FOOTER-- */
 .footer {
@@ -311,6 +322,7 @@ img {
   flex-direction: column;
   margin-bottom: 20px;
 }
+
 .logo-footer {
   margin-bottom: 20px;
 
@@ -326,6 +338,7 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .city {
   margin-bottom: 9px;
 
@@ -347,6 +360,20 @@ img {
 }
 .adress .adress-link:last-child {
   margin-bottom: 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-item {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-item:not(:last-child) {
+  margin-right: 10px;
 }
 /* <<<PAGE PORTFOLIO>>> */
 
