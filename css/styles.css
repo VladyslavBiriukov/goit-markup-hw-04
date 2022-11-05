@@ -62,7 +62,51 @@ img {
 }
 .card-set-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+  background-color: var(--primary-white-color);
 }
+/* SOCIAL LINKS ICON */
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: rgb(175, 177, 184);
+  background-color: var(--primary-white-color);
+}
+.social-icon {
+  fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.social-link-darck-bg {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-darck-bg:hover,
+.social-link-darck-bg:focus {
+  background-color: var(--accent-color);
+}
+/*MORE DIFFICULT*/
+/* .social-icon {
+  fill: rgb(175, 177, 184);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-white-color);
+} */
+
 /* --SECTIONS-- */
 .section {
   padding-bottom: 94px;
@@ -99,23 +143,23 @@ img {
 }
 
 /* --HADER - NAV-- */
-.header {
-  border-bottom: 1px solid #ececec;
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
-.nav {
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header-nav {
+
+.header-list {
   display: flex;
+  gap: 50px;
 }
 
-.header-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-nav .link {
+.header-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -128,24 +172,28 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.header-nav .link:hover,
-.header-nav .link:focus {
+.header-nav-link:hover,
+.header-nav-link :focus {
   color: var(--accent-color);
 }
-.header-nav .link.current {
+.current {
   color: var(--accent-color);
 }
-
+.header {
+  border-bottom: 1px solid #ececec;
+}
 /* --CONTACTS-- */
-.contacts {
+.contacts-list {
   display: flex;
-  margin-left: 344px;
-}
-.contacts .item + .item {
-  margin-left: 50px;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px;
 }
 
-.contacts .link {
+.contacts-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -154,15 +202,19 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
-
+/* CONTACTS ICON */
+.header-icon {
+  fill: currentColor;
+}
 /* --HERO-- */
 .overlay-hero {
   max-width: 1600px;
   margin: auto;
+
   background-color: rgba(47, 48, 58, 1);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-image.jpg);
@@ -239,13 +291,14 @@ img {
 /* --FEATURE-- */
 .feature-list {
   display: flex;
+  gap: 30px;
 }
 .feature-list .item {
   min-width: 270px;
 }
-.feature-list .item:not(:last-child) {
+/* .feature-list .item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .feature-list .title {
   margin-top: 0;
@@ -261,6 +314,17 @@ img {
 .feature-list .text {
   font-size: 14px;
   line-height: 1.71;
+}
+/*FEATURE ICON*/
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: rgb(245, 244, 250);
+  border-radius: 4px;
+  gap: 30px;
 }
 
 /*--WHAT WE DO--*/
@@ -288,6 +352,7 @@ img {
 .team .text {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 .team .title {
   margin-top: 0;
@@ -317,12 +382,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.flex {
+.footer-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .logo-footer {
   margin-bottom: 20px;
 
@@ -450,30 +514,4 @@ img {
 .projects .text {
   font-size: 16px;
   line-height: 1.88;
-}
-
-.icon-background {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.icon {
-  width: 65.32px;
-  height: 70px;
-}
-
-.feature-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.svg-clock::before {
-  background-image: url(../images/clock.svg);
 }
