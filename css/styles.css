@@ -391,6 +391,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+}
 .footer-adress {
   display: flex;
   flex-direction: column;
@@ -433,6 +436,21 @@ img {
 }
 .adress .adress-link:last-child {
   margin-bottom: 0;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+.footer-links .title {
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 /* <<<PAGE PORTFOLIO>>> */
